@@ -1,0 +1,1262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+
+    <div class="landing-page-bg-container">
+        <div class="gradient-background">
+            <div class="nxt-talks-banner">
+                <video class="background-video" autoplay muted loop id="video1">
+                    <source src="https://res.cloudinary.com/dwtpqnz05/video/upload/v1729540499/Nxt-wave-podcast-demo_yv5ioo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="content">
+                <div class="nxt-talks-logo-container d-flex flex-row">
+                    <div class=" ">
+                        <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729539450/mic_p5bays.png" class="mic-image" width="80px" height="80px">
+                    </div>
+                    <div>
+                        <h1 class="nxt-talks-logo">
+                            NXT <span class="talks-style">Talks</span>
+
+                        </h1>
+                        <h5 class="company-name-nxt-wave">
+                            by NxtWave
+                        </h5>
+                    </div>
+                </div>
+
+                <div class="heading-container">
+                    <h1 class="heading active">A Manager at Uber <br> Teaches You About <br> <span
+                            class="speaker-info">Programming</span></h1>
+                    <h1 class="heading ">A Lead at Super K <br> Teaches You About <br> <span class="speaker-info">Career
+                            Designing</span></h1>
+                    <h1 class="heading">A Sr. Recruiter at Amazon <br> Teaches You About <br> <span
+                            class="speaker-info">Acing
+                            Interviews</span></h1>
+
+                    <h1 class="heading">A CEO at Msys Technologies <br> Teaches You About <br> <span
+                            class="speaker-info">Entrepreneurship</span></h1>
+                    <h1 class="heading">A Sr. Manager at Microsoft <br> Teaches You About <br> <span
+                            class="speaker-info">Product Management</span></h1>
+                    <h1 class="heading">A CTO at Slice <br> Teaches You About <br> <span
+                            class="speaker-info">Leadership</span>
+                    </h1>
+                </div>
+
+                <div class="d-flex flex-column">
+                    <a href="#claim-podcast" class="btn btn-primary claim-access-btn">Claim Free Access</a>
+                    <button class="btn btn-primary watch-trailer-btn" id="showVideoButton"> Watch
+                        Trailer
+                    </button>
+
+                </div>
+
+                <div id="videoContainer" class="video-container hidden">
+                    <button id="closeButton" class="close-button">&times;</button>
+                    <iframe width="800" height="450" src="https://www.youtube.com/embed/MxF43cZxquo?si=9hg2oGzkCNA0EIbh"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" autoplay allowfullscreen>
+                    </iframe>
+                </div>
+                <p class="offer-text">Get 1 Podcast worth <span class="offer">₹2000</span> <span
+                        class="offer-free-text">Free</span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="company-support d-flex flex-column justify-content-end">
+        <div class="Slogan-Container  d-flex flex-column justify-content-end">
+            <div class="mb-2">
+                <h1 class="main-heading">Our Speakers Come From <br> Your Dream Companies</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="company-logo-bg-container">
+        <div class="logos">
+            <div class="logos-slide">
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729199314/Screenshot_2024-10-16_171504-removebg-preview_g7ighl.png"
+                    class="logo-images" />
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729199314/Screenshot_2024-10-16_171458-removebg-preview_ktum1a.png"
+                    class="logo-images" />
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729199313/Screenshot_2024-10-16_171437-removebg-preview_ma1e28.png"
+                    class="logo-images" />
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729199313/Screenshot_2024-10-16_171416-removebg-preview_koyinq.png"
+                    class="logo-images" />
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729199313/Screenshot_2024-10-16_171450-removebg-preview_dugkjq.png"
+                    class="logo-images" />
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729199313/Screenshot_2024-10-16_171444-removebg-preview_dl8nnf.png"
+                    class="logo-images" />
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729199313/Screenshot_2024-10-16_171422-removebg-preview_s3h4gv.png"
+                    class="logo-images" />
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729199312/Screenshot_2024-10-16_171411-removebg-preview_myjxca.png"
+                    class="logo-images" />
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729199308/Screenshot_2024-10-16_171348-removebg-preview_zutqq6.png"
+                    class="logo-images">
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729199307/Screenshot_2024-10-16_170913-removebg-preview_dpsuoj.png"
+                    class="logo-images">
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729199308/Screenshot_2024-10-16_171343-removebg-preview_tr9dyo.png"
+                    class="logo-images">
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729199308/Screenshot_2024-10-16_171328-removebg-preview_kfeqst.png"
+                    class="logo-images">
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729199308/Screenshot_2024-10-16_171400-removebg-preview_bjl9dn.png"
+                    class="logo-images" alt="">
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729199308/Screenshot_2024-10-16_171337-removebg-preview_xzzngz.png"
+                    class="logo-images" alt="">
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729199307/Screenshot_2024-10-16_170905-removebg-preview_grnbzs.png"
+                    class="logo-images" alt="">
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729199307/Screenshot_2024-10-16_170858-removebg-preview_l8ye4x.png"
+                    class="logo-images" alt="">
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729199307/Screenshot_2024-10-16_170852-removebg-preview_bmkrre.png"
+                    class="logo-images" alt="">
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729199307/Screenshot_2024-10-16_170845-removebg-preview_p4wc7x.png"
+                    class="logo-images" alt="">
+            </div>
+
+            <div class="logos-slide">
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729199314/Screenshot_2024-10-16_171504-removebg-preview_g7ighl.png"
+                    class="logo-images" />
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729199314/Screenshot_2024-10-16_171458-removebg-preview_ktum1a.png"
+                    class="logo-images" />
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729199313/Screenshot_2024-10-16_171437-removebg-preview_ma1e28.png"
+                    class="logo-images" />
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729199313/Screenshot_2024-10-16_171416-removebg-preview_koyinq.png"
+                    class="logo-images" />
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729199313/Screenshot_2024-10-16_171450-removebg-preview_dugkjq.png"
+                    class="logo-images" />
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729199313/Screenshot_2024-10-16_171444-removebg-preview_dl8nnf.png"
+                    class="logo-images" />
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729199313/Screenshot_2024-10-16_171422-removebg-preview_s3h4gv.png"
+                    class="logo-images" />
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729199312/Screenshot_2024-10-16_171411-removebg-preview_myjxca.png"
+                    class="logo-images" />
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729199308/Screenshot_2024-10-16_171348-removebg-preview_zutqq6.png"
+                    class="logo-images" alt="">
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729199307/Screenshot_2024-10-16_170913-removebg-preview_dpsuoj.png"
+                    class="logo-images" alt="">
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729199308/Screenshot_2024-10-16_171343-removebg-preview_tr9dyo.png"
+                    class="logo-images" alt="">
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729199308/Screenshot_2024-10-16_171328-removebg-preview_kfeqst.png"
+                    class="logo-images" alt="">
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729199308/Screenshot_2024-10-16_171400-removebg-preview_bjl9dn.png"
+                    class="logo-images" alt="">
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729199308/Screenshot_2024-10-16_171337-removebg-preview_xzzngz.png"
+                    class="logo-images" alt="">
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729199307/Screenshot_2024-10-16_170905-removebg-preview_grnbzs.png"
+                    class="logo-images" alt="">
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729199307/Screenshot_2024-10-16_170858-removebg-preview_l8ye4x.png"
+                    class="logo-images" alt="">
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729199307/Screenshot_2024-10-16_170852-removebg-preview_bmkrre.png"
+                    class="logo-images" alt="">
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729199307/Screenshot_2024-10-16_170845-removebg-preview_p4wc7x.png"
+                    class="logo-images" alt="">
+            </div>
+        </div>
+        <div class="logos">
+            <div class="logos-slide">
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729200106/Screenshot_2024-10-16_171813-removebg-preview_mergu0.png"
+                    class="logo-images" alt="">
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729200105/Screenshot_2024-10-16_171758-removebg-preview_m1gfzu.png"
+                    class="logo-images" alt="">
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729200103/Screenshot_2024-10-16_171747-removebg-preview_gh6nkt.png"
+                    class="logo-images" alt="">
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729200103/Screenshot_2024-10-16_171722-removebg-preview_yt2zbs.png"
+                    class="logo-images" alt="">
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729200103/Screenshot_2024-10-16_171735-removebg-preview_nottqa.png"
+                    class="logo-images" alt="">
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729200103/Screenshot_2024-10-16_171741-removebg-preview_xlqejp.png"
+                    class="logo-images" alt="">
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729200103/Screenshot_2024-10-16_171714-removebg-preview_a28xnk.png"
+                    class="logo-images" alt="">
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729200102/Screenshot_2024-10-16_171707-removebg-preview_tmflop.png"
+                    class="logo-images" alt="">
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729200098/Screenshot_2024-10-16_171655-removebg-preview_tcoada.png"
+                    class="logo-images" alt="">
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729200098/Screenshot_2024-10-16_171649-removebg-preview_jwkdpg.png"
+                    class="logo-images" alt="">
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729200098/Screenshot_2024-10-16_171700-removebg-preview_qd4ptl.png"
+                    class="logo-images" alt="">
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729200097/Screenshot_2024-10-16_171635-removebg-preview_qwldxw.png"
+                    class="logo-images" alt="">
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729200097/Screenshot_2024-10-16_171641-removebg-preview_w6dsdl.png"
+                    class="logo-images" alt="">
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729200093/Screenshot_2024-10-16_171617-removebg-preview_sbpy63.png"
+                    class="logo-images" alt="">
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729200093/Screenshot_2024-10-16_171625-removebg-preview_ylb4sm.png"
+                    class="logo-images" alt="">
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729200092/Screenshot_2024-10-16_171612-removebg-preview_dvlsqj.png"
+                    class="logo-images" alt="">
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729200092/Screenshot_2024-10-16_171606-removebg-preview_gm70xk.png"
+                    class="logo-images" alt="">
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729200092/Screenshot_2024-10-16_171555-removebg-preview_ssjmiq.png"
+                    class="logo-images" alt="">
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729200092/Screenshot_2024-10-16_171518-removebg-preview_dru923.png"
+                    class="logo-images" alt="">
+            </div>
+
+            <div class="logos-slide">
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729200106/Screenshot_2024-10-16_171813-removebg-preview_mergu0.png"
+                    class="logo-images" alt="">
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729200105/Screenshot_2024-10-16_171758-removebg-preview_m1gfzu.png"
+                    class="logo-images" alt="">
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729200103/Screenshot_2024-10-16_171747-removebg-preview_gh6nkt.png"
+                    class="logo-images" alt="">
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729200103/Screenshot_2024-10-16_171722-removebg-preview_yt2zbs.png"
+                    class="logo-images" alt="">
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729200103/Screenshot_2024-10-16_171735-removebg-preview_nottqa.png"
+                    class="logo-images" alt="">
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729200103/Screenshot_2024-10-16_171741-removebg-preview_xlqejp.png"
+                    class="logo-images" alt="">
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729200103/Screenshot_2024-10-16_171714-removebg-preview_a28xnk.png"
+                    class="logo-images" alt="">
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729200102/Screenshot_2024-10-16_171707-removebg-preview_tmflop.png"
+                    class="logo-images" alt="">
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729200098/Screenshot_2024-10-16_171655-removebg-preview_tcoada.png"
+                    class="logo-images" alt="">
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729200098/Screenshot_2024-10-16_171649-removebg-preview_jwkdpg.png"
+                    class="logo-images" alt="">
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729200098/Screenshot_2024-10-16_171700-removebg-preview_qd4ptl.png"
+                    class="logo-images" alt="">
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729200097/Screenshot_2024-10-16_171635-removebg-preview_qwldxw.png"
+                    class="logo-images" alt="">
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729200097/Screenshot_2024-10-16_171641-removebg-preview_w6dsdl.png"
+                    class="logo-images" alt="">
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729200093/Screenshot_2024-10-16_171617-removebg-preview_sbpy63.png"
+                    class="logo-images" alt="">
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729200093/Screenshot_2024-10-16_171625-removebg-preview_ylb4sm.png"
+                    class="logo-images" alt="">
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729200092/Screenshot_2024-10-16_171612-removebg-preview_dvlsqj.png"
+                    class="logo-images" alt="">
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729200092/Screenshot_2024-10-16_171606-removebg-preview_gm70xk.png"
+                    class="logo-images" alt="">
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729200092/Screenshot_2024-10-16_171555-removebg-preview_ssjmiq.png"
+                    class="logo-images" alt="">
+                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729200092/Screenshot_2024-10-16_171518-removebg-preview_dru923.png"
+                    class="logo-images" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+
+    <!-- ---------------------------------------------------------------------------------------------------------- -->
+    <div class="insider-collection">
+        <h1 class="title">
+            A Rare Collection of Insider <br> Knowledge, All Yours!
+        </h1>
+        <p class="description">
+            All secrets uncovered. Exclusive insights, Timely <br> Advice and Personal Growth Journeys straight from the
+            tech experts.
+        </p>
+
+        <div>
+            <div class="button-group ">
+                <button class="button active trending category-title" data-category="trending">
+                    <span class="icon">🔥</span> Trending
+                </button>
+
+                <button class="button category-title" data-category="all">All</button>
+                <button class="button category-title" data-category="tech">Tech</button>
+                <button class="button category-title" data-category="career">Career</button>
+                <button class="button category-title" data-category="cxo">CXO</button>
+                <button class="button category-title" data-category="Productivity">Productivity</button>
+                <button class="button category-title" data-category="gsoc">GSOC</button>
+                <button class="button category-title" data-category="panel">Panel</button>
+            </div>
+        </div>
+
+        <div class="trending-section d-flex flex-row justify-content-center">
+            <div class="trending-card-section">
+                <div class="speaker-trainer-image-sandeep-sir ">
+                    <button class="trailer-button" data-toggle="modal" data-target="#sandeep-sir">
+                        Trailer
+                        <div class="play-icon">
+                    </button>
+
+                    <div class="modal fade modal-bg-container" id="sandeep-sir" tabindex="-1"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <button type="button" class="close video-modal-close-btn" class="" data-dismiss="modal"
+                            aria-label="Close">
+                            <span aria-hidden="true"></span>×
+                        </button>
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                            <div class="modal-content video-modal-insider">
+
+                                <div class="video-modal-header d-flex flex-column">
+                                    <iframe width="800" height="450"
+                                        src="https://www.youtube.com/embed/YDfL0TfKS3M?si=vYNXKedjcEnvwiqG"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="insider-collection-card">
+                    <div class="insider-collection-card-bottom-section">
+                        <h3 class="insider-collection-card-title">
+                            An Engineering <br> Manager at Uber <br> Teaches Programming
+                        </h3>
+
+                        <div class="d-flex flex-row mt-3">
+                            <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729264916/wall-clock_jtb1st.png"
+                                class="mr-2" alt="" width="25px" height="25px">
+                            <p class="card-duration">47:17 Mins</p>
+                        </div>
+                        <p class="card-author ">Sandeep Gorthi</p>
+                        <p class="card-author-post">Engineering Manager at Uber</p>
+
+                        <a class="learn-more-link " data-toggle="modal" data-target="#learn-more-modal" href="">
+                            What you will learn
+                            
+                            <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729540923/arrows_juhfnr.png"
+                                alt="" width="20px" height="20px">
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade modal-bg-container" id="learn-more-modal" tabindex="-1"
+                aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content modal-insider">
+                        <div class="modal-header d-flex flex-column">
+
+                            <div class="d-flex flex-row">
+                                <h1 class="modal-header">Meet Your Speaker</h1>
+                                <div class="modal-cross-bg-container">
+                                    <button type="button" class="close modal-close-btn" class="" data-dismiss="modal"
+                                        aria-label="Close">
+                                        <span aria-hidden="true"></span>×
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="speaker-section d-flex flex-row mt-2">
+                                <div class="">
+                                    <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729193590/Sandeep_Gorthi_wcmyyt.png"
+                                        class="speaker-image" alt="">
+                                </div>
+                                <div>
+                                    <h3 class="speaker-name">Sandeep Gorthi</h3>
+                                    <h5 class="speaker-introduction">Engineering Manager at Uber</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal-container">
+                            <div>
+                                <p class="speaker-subtitle">Master The Art of Coding</p>
+
+                                <p class="Experience-title">Experience</p>
+
+                                <div class="mb-4">
+                                    <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729199307/Screenshot_2024-10-16_170852-removebg-preview_bmkrre.png"
+                                        class="Experience-logo ">
+
+                                    <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729363097/yahoo_q9ppwc.png"
+                                        class="Experience-logo" alt="">
+
+                                    <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729416521/Grab-Logo-removebg-preview_nzu1ol.png"
+                                        class="Experience-logo-grab" alt="">
+                                </div>
+                                <div>
+                                    <p class="learning-title">What You will Learn</p>
+
+                                    <div class="d-flex flex-row">
+                                        <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729363096/check-mark_rxdwpc.png"
+                                            class="learning-logo">
+                                        <p class="learning-item">Debunk Programming Myths</p>
+                                    </div>
+
+                                    <div class="d-flex flex-row">
+                                        <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729363096/check-mark_rxdwpc.png"
+                                            class="learning-logo">
+                                        <p class="learning-item">The Path From Developer to Manager</p>
+                                    </div>
+
+                                    <div class="d-flex flex-row">
+                                        <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729363096/check-mark_rxdwpc.png"
+                                            class="learning-logo">
+                                        <p class="learning-item">Work Cultures in Giant Tech Companies</p>
+                                    </div>
+
+                                    <div class="d-flex flex-row">
+                                        <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729363096/check-mark_rxdwpc.png"
+                                            class="learning-logo">
+                                        <p class="learning-item">Cultivating a Love for Tech: Internships &
+                                            Competitions.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="trending-card-section">
+
+                <div class="speaker-trainer-image-pritesh-sir ">
+                    <button class="trailer-button " data-toggle="modal" data-target="#pritesh-sir">
+                        Trailer
+                        <div class="play-icon"></div>
+                    </button>
+                    <div class="modal fade modal-bg-container" id="pritesh-sir" tabindex="-1"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <button type="button" class="close video-modal-close-btn" class="" data-dismiss="modal"
+                            aria-label="Close">
+                            <span aria-hidden="true"></span>×
+                        </button>
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                            <div class="modal-content video-modal-insider">
+
+                                <div class="video-modal-header d-flex flex-column">
+                                    <iframe width="800" height="450"
+                                        src="https://www.youtube.com/embed/pDpwlapFss8?si=P4WQ7FgBlRX45YYU"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="insider-collection-card">
+
+
+
+                    <div class="insider-collection-card-bottom-section">
+                        <h3 class="insider-collection-card-title">
+                            A Sr. Recruiter at<br> Amazon Teaches Acing <br> Interviews
+                        </h3>
+
+                        <div class="d-flex flex-row mt-3">
+                            <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729264916/wall-clock_jtb1st.png"
+                                class="mr-2" alt="" width="25px" height="25px">
+                            <p class="card-duration">41.07 Mins</p>
+                        </div>
+                        <p class="card-author ">Pritesh Malode</p>
+                        <p class="card-author-post">Senior Recruiter at Amazon</p>
+
+                        <a class="learn-more-link " data-toggle="modal" data-target="#learn-more-modal-pritesh-sir"
+                            href="">
+                            What you will learn
+                            <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729540923/arrows_juhfnr.png"
+                                alt="" width="20px" height="20px">
+
+                        </a>
+
+
+                    </div>
+                </div>
+
+                <!-- Modal -->
+
+                <div class="modal fade modal-bg-container" id="learn-more-modal-pritesh-sir" tabindex="-1"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content modal-insider">
+                            <div class="modal-header d-flex flex-column">
+
+                                <div class="d-flex flex-row">
+                                    <h1 class="modal-header">Meet Your Speaker</h1>
+                                    <div class="modal-cross-bg-container">
+                                        <button type="button" class="close modal-close-btn" class=""
+                                            data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true"></span>×
+                                        </button>
+
+                                    </div>
+                                </div>
+
+                                <div class="speaker-section d-flex flex-row mt-2">
+                                    <div class="">
+                                        <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729193590/Pritesh_Malode_ycjmwx.png"
+                                            class="speaker-image" alt="">
+                                    </div>
+                                    <div>
+                                        <h3 class="speaker-name">Pritesh Malode</h3>
+                                        <h5 class="speaker-introduction">Senior Recruiter at Amazon</h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="modal-container">
+                                <div>
+                                    <p class="speaker-subtitle">Unlocking the Secrets of the Interview Process</p>
+
+                                    <p class="Experience-title">Experience</p>
+                                    
+                                    <div class="mb-4">
+                                        <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729199307/Screenshot_2024-10-16_170852-removebg-preview_bmkrre.png"
+                                            class="Experience-logo ">
+
+                                        <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729414988/GenPact-removebg-preview_piequ5.png"
+                                            class="Experience-logo" alt="">
+
+                                        <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729415798/NCR-removebg-preview_hzgbsr.png"
+                                            class="Experience-logo-grab" alt="">
+
+                                        <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729415798/Byjus-removebg-preview_gaimrk.png"
+                                            class="Experience-logo-grab ml-5" alt="">
+                                    </div>
+                                    <div>
+                                        <p class="learning-title">What You will Learn</p>
+
+                                        <div class="d-flex flex-row">
+                                            <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729363096/check-mark_rxdwpc.png"
+                                                class="learning-logo">
+                                            <p class="learning-item">What Companies are Looking For?</p>
+                                        </div>
+
+                                        <div class="d-flex flex-row">
+                                            <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729363096/check-mark_rxdwpc.png"
+                                                class="learning-logo">
+                                            <p class="learning-item">What Does Amazon Look for in a Candidate?</p>
+                                        </div>
+
+                                        <div class="d-flex flex-row">
+                                            <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729363096/check-mark_rxdwpc.png"
+                                                class="learning-logo">
+                                            <p class="learning-item">What Questions are Asked During Interviews?</p>
+                                        </div>
+
+                                        <div class="d-flex flex-row">
+                                            <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729363096/check-mark_rxdwpc.png"
+                                                class="learning-logo">
+                                            <p class="learning-item">What is the Amazon Culture Like?</p>
+                                        </div>
+
+                                        <div class="d-flex flex-row">
+                                            <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729363096/check-mark_rxdwpc.png"
+                                                class="learning-logo">
+                                            <p class="learning-item">What is the Most Sought-After Skill and Trait by
+                                                Recruiters?</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="trending-card-section">
+                <div class="speaker-trainer-image-sanjay-sir ">
+                    <button class="trailer-button " data-toggle="modal" data-target="#sanjay-sir">
+                        Trailer
+                        <div class="play-icon"></div>
+                    </button>
+                    <div class="modal fade modal-bg-container" id="sanjay-sir" tabindex="-1"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <button type="button" class="close video-modal-close-btn" class="" data-dismiss="modal"
+                            aria-label="Close">
+                            <span aria-hidden="true"></span>×
+                        </button>
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                            <div class="modal-content video-modal-insider">
+
+                                <div class="video-modal-header d-flex flex-column">
+                                    <iframe width="800" height="450"
+                                        src="https://www.youtube.com/embed/BKe0tIy4u0k?si=bVqTEbGnAzJUtegP"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="insider-collection-card">
+
+
+
+                    <div class="insider-collection-card-bottom-section">
+                        <h3 class="insider-collection-card-title">
+                            A Global CEO Teaches <br> Mastering Time <br> Management
+                        </h3>
+
+                        <div class="d-flex flex-row mt-3">
+                            <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729264916/wall-clock_jtb1st.png"
+                                class="mr-2" alt="" width="25px" height="25px">
+                            <p class="card-duration">56:32 Mins</p>
+                        </div>
+                        <p class="card-author ">Sanjay Sehgal</p>
+                        <p class="card-author-post">Chairman & CEO at Msys Technologies</p>
+
+                        <a class="learn-more-link " data-toggle="modal" data-target="#learn-more-modal-sanjay-sir"
+                            href="">
+                            What you will learn
+                            <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729540923/arrows_juhfnr.png"
+                                alt="" width="20px" height="20px">
+
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade modal-bg-container" id="learn-more-modal-sanjay-sir" tabindex="-1"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content modal-insider">
+                            <div class="modal-header d-flex flex-column">
+
+                                <div class="d-flex flex-row">
+                                    <h1 class="modal-header">Meet Your Speaker</h1>
+                                    <div class="modal-cross-bg-container">
+                                        <button type="button" class="close modal-close-btn" class=""
+                                            data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true"></span>×
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="speaker-section d-flex flex-row mt-2">
+                                    <div class="">
+                                        <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729193590/Sanjay_Sehgal_ixil6j.png"
+                                            class="speaker-image" alt="">
+                                    </div>
+                                    <div>
+                                        <h3 class="speaker-name">Sandeep Gorthi</h3>
+                                        <h5 class="speaker-introduction">Chairman & CEO at Msys Technologies</h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="modal-container">
+                                <div>
+                                    <p class="speaker-subtitle">A CEO's Guide to Effective Time Management</p>
+
+                                    <p class="Experience-title">Experience</p>
+
+                                    <div class="mb-4">
+                                        <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729416609/MSYsTechnology-removebg-preview-removebg-preview_jksiwq.png"
+                                            width="120px" height="40px">
+                                    </div>
+                                    <div>
+                                        <p class="learning-title">What You will Learn</p>
+
+                                        <div class="d-flex flex-row">
+                                            <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729363096/check-mark_rxdwpc.png"
+                                                class="learning-logo">
+                                            <p class="learning-item">The CEO Approach to Time Management</p>
+                                        </div>
+
+                                        <div class="d-flex flex-row">
+                                            <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729363096/check-mark_rxdwpc.png"
+                                                class="learning-logo">
+                                            <p class="learning-item">Four Mantras for Effective Time Management</p>
+                                        </div>
+
+                                        <div class="d-flex flex-row">
+                                            <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729363096/check-mark_rxdwpc.png"
+                                                class="learning-logo">
+                                            <p class="learning-item">How to Prioritize Time Efficiently</p>
+                                        </div>
+
+                                        <div class="d-flex flex-row">
+                                            <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729363096/check-mark_rxdwpc.png"
+                                                class="learning-logo">
+                                            <p class="learning-item">Insights on How to Stay Focused</p>
+                                        </div>
+
+                                        <div class="d-flex flex-row">
+                                            <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729363096/check-mark_rxdwpc.png"
+                                                class="learning-logo">
+                                            <p class="learning-item">Top Three Time Management Frameworks</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="text-center">
+            <a href="#claim-podcast" class="btn btn-primary offer-button">Claim Free Access</a>
+        </div>
+        <div class="offer-details">
+            Get 1 Podcast worth <span class="strike-through">₹2000</span> <span class="text-free">Free</span>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- -------------------------------------------------------------------------------------------------------- -->
+
+    <div class="feedback-section">
+        <div>
+            <h1 class="feedback-title">
+                Students Say, <br>
+                It's a Blockbuster!
+            </h1>
+            <button class="feedback-subtitle">
+                25000+Happy Feedbacks
+            </button>
+        </div>
+
+
+        <section class="slider_container">
+            <div class="container">
+                <div class="swiper card_slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide ml-5">
+                            <div class="carousel-item active ">
+                                <div class="card">
+
+                                    <div class="card-body student-feedback-card">
+                                        <div class="d-flex flex-row">
+                                            <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729539925/Murali_Benakala_spieya.jpg" class="student-image" alt="...">
+                                            <div mr-2>
+                                                <h5 class="student-name">Murali Benakala . 1st</h5>
+                                                <p class="student-designation">Fellow at CCBP 4.0 academy | NxtWave</p>
+                                            </div>
+                                            <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729539925/linkedin_bocrr8.png" class="linkedin-icon" alt="">
+                                        </div>
+                                        <p class="student-feedback-text">
+                                            As a CCBP 4.0 Academy student, I feel very lucky that I get access to the
+                                            knowledge of top-notch experts with ease. Thanks to NxtWave ...
+                                            <a href="https://www.linkedin.com/in/muralibenakala/">Read More on
+                                                LinkedIn</a>
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide ">
+                            <div class="carousel-item active ">
+                                <div class="card">
+
+                                    <div class="card-body student-feedback-card">
+                                        <div class="d-flex flex-row">
+                                            <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729539932/Sushmita_Mahajan_simqpw.jpg" class="student-image" alt="...">
+                                            <div>
+                                                <h5 class="student-name">Sushmita Mahajan . 1st</h5>
+                                                <p class="student-designation">Fellow at CCBP 4.0 academy | NxtWave</p>
+                                            </div>
+                                            <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729539925/linkedin_bocrr8.png" class="linkedin-icon" alt="">
+                                        </div>
+                                        <p class="student-feedback-text">
+                                            These podcasts are really special! I started listening from a student
+                                            perspective and ended up learning the product manager's perspective ...
+                                            <a href="https://www.linkedin.com/in/sushmita-mahajan-28-dec/">Read More on
+                                                LinkedIn</a>
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide ">
+                            <div class="carousel-item active ">
+                                <div class="card">
+
+                                    <div class="card-body student-feedback-card">
+                                        <div class="d-flex flex-row">
+                                            <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729539924/Anshu_Gupta_rcc3vq.jpg" class="student-image" alt="...">
+                                            <div>
+                                                <h5 class="student-name">Anshu Gupta . 1st</h5>
+                                                <p class="student-designation">Fellow at CCBP 4.0 academy | NxtWave</p>
+                                            </div>
+                                            <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729539925/linkedin_bocrr8.png" class="linkedin-icon" alt="">
+                                        </div>
+                                        <p class="student-feedback-text">
+                                            The podcast with Sanjay Sehgal, CEO of MSys Technologies, is the best and
+                                            incredibly valuable. I took nine pages of notes and ...
+                                            <a href="https://www.linkedin.com/in/anshu-gupta-b984b1306/">Read More on
+                                                LinkedIn</a>
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide ">
+                            <div class="carousel-item active ">
+                                <div class="card">
+
+                                    <div class="card-body student-feedback-card">
+                                        <div class="d-flex flex-row">
+                                            <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729539925/Shri_Charan_Repakula_q1czsz.jpg" class="student-image" alt="...">
+                                            <div>
+                                                <h5 class="student-name">Sri Charan Repakula . 1st</h5>
+                                                <p class="student-designation">Fellow at CCBP 4.0 academy | NxtWave</p>
+                                            </div>
+                                            <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729539925/linkedin_bocrr8.png" class="linkedin-icon" alt="">
+                                        </div>
+                                        <p class="student-feedback-text">
+                                            After Gowtham sir's podcast, I got really motivated with some of his
+                                            insights and experiences and also noted some points! He enlightened ...
+                                            <a href="https://www.linkedin.com/in/sri-charan-repakula-558426190/">Read
+                                                More on LinkedIn</a>
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="carousel-item active ">
+                                <div class="card">
+
+                                    <div class="card-body student-feedback-card">
+                                        <div class="d-flex flex-row">
+                                            <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729539924/Chandrasekhar_Kuruva_edzsyq.jpg" class="student-image" alt="...">
+                                            <div>
+                                                <h5 class="student-name">Chandrasekhar Kuruva . 1st</h5>
+                                                <p class="student-designation">Fellow at CCBP 4.0 academy | NxtWave</p>
+                                            </div>
+                                            <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729539925/linkedin_bocrr8.png" class="linkedin-icon" alt="">
+                                        </div>
+                                        <p class="student-feedback-text">
+                                            Very excellent and learnt many insights from the podcast. I really thank to
+                                            Archita ma'am for delivering such great insights in the podcast. ...
+                                            <a href="https://www.linkedin.com/in/chandrasekharkuruva/">Read More on
+                                                LinkedIn</a>
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="swiper-slide ">
+                            <div class="carousel-item active ">
+                                <div class="card">
+
+                                    <div class="card-body student-feedback-card">
+                                        <div class="d-flex flex-row">
+                                            <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729539925/Karthk_Aendavetla_ywjki2.jpg" class="student-image" alt="...">
+                                            <div>
+                                                <h5 class="student-name">Karthk Aendavetla . 1st</h5>
+                                                <p class="student-designation">Fellow at CCBP 4.0 academy | NxtWave</p>
+                                            </div>
+                                            <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729539925/linkedin_bocrr8.png" class="linkedin-icon" alt="">
+                                        </div>
+                                        <p class="student-feedback-text">
+                                            Ma'am answered all our student questions and shared her experience on how to
+                                            build the best career in IT! It is very useful to me , Thank you ...
+                                            <a href="https://www.linkedin.com/in/karthik-aendavetla/">Read More on
+                                                LinkedIn</a>
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="carousel-item active ">
+                                <div class="card">
+
+                                    <div class="card-body student-feedback-card">
+                                        <div class="d-flex flex-row">
+                                            <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729539931/Subhani_ternwt.jpg" class="student-image" alt="...">
+                                            <div>
+                                                <h5 class="student-name">Subhani Shaik . 1st</h5>
+                                                <p class="student-designation">Fellow at CCBP 4.0 academy | NxtWave</p>
+                                            </div>
+                                            <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729539925/linkedin_bocrr8.png" class="linkedin-icon" alt="">
+                                        </div>
+                                        <p class="student-feedback-text">
+                                            I learned about Amazon's 4C's of hiring. The podcast provided great insights
+                                            into the recruiter's perspective and the company's evaluation ...
+                                            <a href="https://www.linkedin.com/in/subhani-shaik-0bb6b622b/">Read More on
+                                                LinkedIn</a>
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide ">
+                            <div class="carousel-item active ">
+                                <div class="card">
+
+                                    <div class="card-body student-feedback-card">
+                                        <div class="d-flex flex-row">
+                                            <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729539924/Harish_Nethi_i8jp8q.jpg" class="student-image" alt="...">
+                                            <div>
+                                                <h5 class="student-name">Harish Nethi . 1st</h5>
+                                                <p class="student-designation">Fellow at CCBP 4.0 academy | NxtWave</p>
+                                            </div>
+                                            <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729539925/linkedin_bocrr8.png" class="linkedin-icon" alt="">
+                                        </div>
+                                        <p class="student-feedback-text">
+                                            I learned about Amazon's 4C's of hiring. The podcast
+                                            provided great insights into the recruiter's perspective
+                                            and the company's evaluation...
+                                            <a href="https://www.linkedin.com/in/harishnethi/">Read More on LinkedIn</a>
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide ">
+                            <div class="carousel-item active ">
+                                <div class="card">
+
+                                    <div class="card-body student-feedback-card">
+                                        <div class="d-flex flex-row">
+                                            <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729539932/Velaga_Prasanth_xhump8.jpg" class="student-image" alt="...">
+                                            <div>
+                                                <h5 class="student-name">Velaga Prasanth . 1st</h5>
+                                                <p class="student-designation">Fellow at CCBP 4.0 academy | NxtWave</p>
+                                            </div>
+                                            <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729539925/linkedin_bocrr8.png" class="linkedin-icon" alt="">
+                                        </div>
+                                        <p class="student-feedback-text">
+                                            I got all my doubts about interviews cleared by Pritesh and Avinash Sir,
+                                            These podcast has really very good insights! ...
+                                            <a href="https://www.linkedin.com/in/velaga-prasanth-188b25323/">Read More
+                                                on LinkedIn</a>
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js">
+
+    </script>
+
+    <script type="text/javascript">
+        var swiper = new Swiper(".card_slider", {
+
+            spaceBetween: 30,
+            loop: true,
+            speed: 2000,
+
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+
+                },
+                480: {
+                    slidesPerView: 1,
+
+                },
+                768: {
+                    slidesPerView: 3,
+
+                },
+                1200: {
+                    slidesPerView: 3,
+
+                },
+            },
+        });
+    </script>
+
+
+
+
+    <!-- --------------------- ---------------------------------------------------------------------- -->
+
+    <div>
+        <div class="d-flex flex-row">
+            <div class="Empowering-section gradient-color d-flex flex-row">
+                <div>
+                    <h1 class="Career-heading">
+                        NxtWave's Empowering Podcast Series <br> to Shape your Dream Career
+                    </h1>
+
+
+                    <div class="Podcast-detail d-flex flex-row justify-content-start">
+                        <div>
+                            <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729539450/microphone_wfoyla.png" class="feature-icon" alt="">
+                        </div>
+                        <h3 class="info-highlight ">100+ Podcasts</h3>
+                    </div>
+
+                    <div class="Podcast-detail d-flex flex-row justify-content-start">
+                        <div>
+                            <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729539450/rupee_l5rpbu.png" class="feature-icon" alt="">
+                        </div>
+                        <h3 class="info-highlight ">Each Worth Rs.2000/-</h3>
+                    </div>
+
+                    <div class="Podcast-detail d-flex flex-row justify-content-start">
+                        <div>
+                            <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729539449/fire_wfxbko.png" class="feature-icon" alt="">
+                        </div>
+                        <h3 class="info-highlight ">FREE for NxtWave Academy students</h3>
+                    </div>
+
+                    <a href="#claim-podcast" class="btn btn-primary claim-free-btn">Claim Free Access</a>
+                </div>
+
+                <div class="stand-mike-img">
+                    <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729539450/mike_hesvfm.png" width="400px" height="400px">
+                </div>
+
+            </div>
+        </div>
+
+        <div class="form-section d-flex flex-row" id="claim-podcast">
+            <div>
+                <h1 class="form-heading">
+                    Claim Your <br> Free Access to a Podcast
+                </h1>
+            </div>
+            <div class="form-wrapper">
+                <form action="">
+                    <label class="label-name" for="name">Name</label>
+                    <div>
+                        <input class="input-name" type="text" name="myName" id="name">
+                    </div>
+
+                    <label class="label-phone" for="number">Phone Number</label>
+                    <div>
+                        <input class="input-phone" type="number" name="myNumber" id="">
+                    </div>
+
+                    <button class="btn btn-primary otp-btn"> Get OTP</button>
+                </form>
+            </div>
+
+        </div>
+
+        <div class="disclaimer-container">
+            <div>
+                <p class="disclaimer-text">* The speaker profiles are as on the recored date</p>
+            </div>
+        </div>
+
+        <div class="container-fluid footer-section ">
+            <div class="row">
+                <div class="d-flex flex-row ">
+                    <div class="col-12 col-md-4">
+                        <div class="reach-us-section">
+                            <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729539449/NxtWave-removebg-preview_inu0eb.png" class="Company-Logo" alt="">
+
+                            <h5 class="reachUs-heading">Reach Us</h5>
+
+                            <div class="d-flex flex-row">
+                                <div>
+                                    <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729539450/mail_rtjdxl.png" class="mail-logo" alt="">
+                                </div>
+                                <p class="company-mail">support@nxtwave.tech</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="quick-link-section col-12 col-md-4">
+                        <div class="">
+                            <h5 class="Quick-link-heading">Quick Links</h5>
+                        </div>
+
+                        <div class="d-flex flex-row">
+                            <div class="">
+                                <p class="footer-quick-links">Home</p>
+                                <p class="footer-quick-links">Academy</p>
+                                <p class="footer-quick-links">Intensive</p>
+                                <p class="footer-quick-links">Hire with us</p>
+                            </div>
+
+                            <div class="ml-5">
+                                <p class="footer-quick-links">Contact Us</p>
+                                <p class="footer-quick-links">About Us</p>
+                                <p class="footer-quick-links">Reviews</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="payment-sectinon col-12 col-md-4">
+                        <div class="">
+                            <h5 class="footer-payment-method-heading">Payment Methods</h5>
+                        </div>
+                        <div>
+                            <div>
+                                <div class="d-flex flex-row">
+                                    <div class=" ">
+                                        <div class="payment-icon-bg-container text-center">
+                                            <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729539451/visa_dejkfv.png" class="payment-icon" height="40px" width="40px" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="">
+                                        <div class="payment-icon-bg-container text-center">
+                                            <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729539450/masterCard_i4vkvt.png" class="payment-icon" height="25px" width="30px"
+                                                alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="">
+                                        <div class="payment-icon-bg-container text-center">
+                                            <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729539449/maestro_ytjpfs.png" class="payment-icon" height="35px" width="40px"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-row">
+                                    <div class="">
+                                        <div class="payment-icon-bg-container text-center">
+                                            <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729539450/Rupay-removebg-preview_prpsrp.png" class="payment-icon" height="22px"
+                                                width="40px" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="">
+                                        <div class="payment-icon-bg-container text-center">
+                                            <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729539451/UPI-removebg-preview_jbj2sj.png" class="payment-icon" height="30px"
+                                                width="40px" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="">
+                                        <div class="payment-icon-bg-container text-center">
+                                            <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729539450/Rupay-removebg-preview_prpsrp.png" class="payment-icon" height="40px"
+                                                width="40px" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-row justify-content-start col-md-12">
+                                <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729539449/road_lu1qel.png" height="40px" width="40px" alt="">
+
+                                <p class="footer-address ">
+                                    NxtWave, WeWork Rajapushpa Summit, <br> Nanakramguda Rd, Financial District,
+                                    <br>
+                                    Manikonda Jagir, Telangana 500032
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center col-12 mt-5 mb-5">
+                    <hr class="footer-hr ">
+                </div>
+
+                <div class="d-flex flex-row">
+                    <div class="social-media-icon-section ">
+                        <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729539449/facebook_xlcwgr.png" class="social-media-icon " alt="">
+                        <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729539450/instagram_iykloz.png" class="social-media-icon" alt="">
+                        <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729539451/social_kkzyzt.png" class="social-media-icon" alt="">
+                        <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729539449/linkedin_kly5hv.png" class="social-media-icon" alt="">
+                        <img src="https://res.cloudinary.com/dwtpqnz05/image/upload/v1729539449/youtube_zppvpe.png" class="social-media-icon" alt="">
+                    </div>
+                    <div>
+                        <div class="d-flex flex-row policy-section">
+                            <div class="">
+                                <p class="footer-legal-link">Privacy Policy</p>
+                            </div>
+                            <div class="">
+                                <p class="footer-legal-link">Cookie Policy</p>
+                            </div>
+
+                            <div class="">
+                                <p class="footer-legal-link">Terms and Conditions</p>
+                            </div>
+                            <div class="">
+                                <p class="footer-legal-link">Grievance Redressal</p>
+                            </div>
+
+                            <div class=" mb-5">
+                                <p class="footer-legal-link">Corporate Information</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+</body>
+
+</html>
